@@ -1,0 +1,13 @@
+using System;
+
+public class Product
+{
+    public int ProductID { get; set; }
+    public string Name { get; set; }
+    public string Description { get; set; }
+    public double Price { get; set; }
+    public int Stock { get; set; }
+
+    public void UpdateStock(int amount) => Stock += amount;
+    public string GetDetails() => $"{Name}: {Description}, Price: ${Price}, Stock: {Stock}";
+}
